@@ -18,14 +18,14 @@ namespace SalutiWebApi.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<InfoMsg> getSaluti2(string Nome)
         {
-            return Ok(new InfoMsg("101", $"Saluti {Nome}, sono la tua web api csharp in Azure App Services"));
+            return Ok(new InfoMsg("101", $"Saluti {Nome}, sono la tua web api csharp aggiornata in Github in Azure App Services"));
         }
 
         [HttpGet("{Nome}/{version}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<InfoMsg> getSaluti3(string Nome, string version)
         {
-            return Ok(new InfoMsg("101", $"Saluti {Nome}, sono la versione {version} della web api"));
+            return Ok(new InfoMsg("101", $"Saluti {Nome}, sono la versione {version} della web api aggiornata con Github"));
         }
     }
 }
